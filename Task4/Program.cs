@@ -10,16 +10,19 @@ namespace Task4
     {
         static void Main(string[] args)
         {
+            /*Напишете програма, която намира максимална редица от последо-
+            вателни еднакви елементи в масив. Пример: {2, 1, 1, 2, 3, 3, 2, 2,
+            2, 1} → {2, 2, 2}.*/
             int br = 1, count = 1, number = 0;
 
             Console.Write("Enter array length: ");
-            int length = Int32.Parse(Console.ReadLine());
+            int length = int.Parse(Console.ReadLine());
             int[] arr = new int[length];
 
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write("Enter {0} element: ", i);
-                arr[i] = Int32.Parse(Console.ReadLine());
+                arr[i] = int.Parse(Console.ReadLine());
             }
 
             for (int i = 0; i < arr.Length - 1; i++)
